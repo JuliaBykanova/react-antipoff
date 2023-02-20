@@ -5,5 +5,5 @@
 }
 
 .textParagraf:not(:last-child){
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }

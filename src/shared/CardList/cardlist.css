@@ -21,4 +21,8 @@
   .mainContainer{
     padding: 32px 35px;
   }
+
+  .cardsList{
+    margin-bottom: 12px;
+  }
 }

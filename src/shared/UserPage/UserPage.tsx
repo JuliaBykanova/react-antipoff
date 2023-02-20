@@ -18,8 +18,20 @@ export function UserPage() {
   const data = useSelector<RootState, IUsersData[]>(state => state.user.data);
   const userData = data.find(x => `${x.id}` === id);
 
-  if(!userData){
+  const userPageContainer = classNames(
+    styles.infoBlock,
+    `container`
+  );
 
+  if(userData){
+    localStorage.setItem(`name_${id}`, userData.first_name);
+    localStorage.setItem(`surname_${id}`, userData.last_name);
+    localStorage.setItem(`avatar_${id}`, userData.avatar);
+    localStorage.setItem(`email_${id}`, userData.email);
+  };
+
+  if(!userData && !localStorage.getItem(`name_${id}`)){
+    console.log(localStorage.getItem(`name_${id}`));
     return (
       <Header>
         <div className={styles.userError}>Не получилось найти пользователя</div>
@@ -30,22 +42,19 @@ export function UserPage() {
 
   }
 
-  const userPageContainer = classNames(
-    styles.infoBlock,
-    `container`
-  );
-
+  
   return (
     <div className={styles.layout}>
       <Header>
-        <UserHeaderContent name={userData.first_name} surname={userData.last_name} imgSrc={userData.avatar}/>
+        <UserHeaderContent name={localStorage.getItem(`name_${id}`) || userData?.first_name || 'Anon'} surname={localStorage.getItem(`surname_${id}`) || userData?.last_name || 'Anon'} imgSrc={localStorage.getItem(`avatar_${id}`) || userData?.avatar || 'Anon'}/>
       </Header>
       <Content>
         <div className={userPageContainer}>
           <UserTextBlock/>
-          <UserContactList email={userData.email}/>
+          <UserContactList email={localStorage.getItem(`email_${id}`) || userData?.email || 'Anon'}/>
         </div>
       </Content>
     </div>
   );
+
 }

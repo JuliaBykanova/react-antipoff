@@ -14,7 +14,7 @@ export function ExitBtn() {
 
   function handleClick(){
     dispatch(registrationRequestSuccess(''));
-    localStorage.removeItem('token');
+    localStorage.clear();
     navigate("/");
   };
 

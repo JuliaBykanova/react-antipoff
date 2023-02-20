@@ -28,7 +28,7 @@ export function Card(props: IUserData) {
           <AvatarIcon imgSrc={imgSrc} size={124}/>
         </div>
         <TextContent name={name} surname={surname}/>
-        <CardBtn/>
+        <CardBtn id={id}/>
       </Link>
 
     </li>

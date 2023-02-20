@@ -22,10 +22,10 @@ export type RootState = {
 };
 
 const initialState: RootState = {
-  name: '',
+  name: 'hop',
   email: 'eve.holt@reqres.in',
-  password: '',
-  repeatPassword: '',
+  password: 'k6K6k!',
+  repeatPassword: 'k6K6k!',
   registration: {
     loading: false,
     token: '',
