@@ -1,0 +1,38 @@
+.headerTextContent{
+  display: flex;
+  flex-direction: column;
+}
+
+.headerTitle{
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 75px;
+  color: #FFF;
+}
+
+.headerAddInfo{
+  font-size: 32px;
+  line-height: 38px;
+  color: #FFF;
+}
+
+@media (max-width: 992px){
+  .headerTextContent{
+    align-items: center;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 576px){
+  .headerTitle{
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .headerAddInfo{
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+

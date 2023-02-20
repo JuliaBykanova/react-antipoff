@@ -1,0 +1,14 @@
+.input {
+  height: 48px;
+  border: 1px solid #D9D9D9;
+  padding: 12px 8px 12px 16px;
+  background: #F8F8F8;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #808185;
+}
+
+.input[aria-invalid] {
+  border: 1px solid #FF6161;
+}

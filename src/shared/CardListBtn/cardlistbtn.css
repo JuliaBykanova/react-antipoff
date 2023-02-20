@@ -1,0 +1,18 @@
+.listBtn{
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  border: 1px solid #151317;
+  border-radius: 8px;
+}
+
+.listBtnText{
+  margin-right: 11px;
+  font-size: 16px;
+  line-height: 136.19%;
+  color: #151317;
+}
+
+.inverted{
+  transform: rotate(180deg);
+}

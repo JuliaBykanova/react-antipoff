@@ -1,0 +1,77 @@
+.card{
+  position: relative;
+  width: calc((100% - 60px)/4);
+  margin-bottom: 20px;
+  padding: 20px;
+  padding-top: 36px;
+  box-shadow: 0px 0.996045px 3.98418px rgba(51, 51, 51, 0.15);
+  border-radius: 10px;
+  background-color: #FFF;
+}
+
+.card:not(:nth-child(4n)){
+  margin-right: 20px;
+}
+
+.cardLink{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardLink::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.avatarIcon{
+  margin-bottom: 16px;
+}
+
+@media (max-width:1200px){
+  .card{
+    width: calc((100% - 40px)/3);
+  }
+
+  .card:nth-child(4n){
+    margin-right: 20px;
+  }
+
+  .card:nth-child(3n){
+    margin-right: 0;
+  }
+}
+
+@media (max-width:800px){
+  .card{
+    width: calc((100% - 20px)/2);
+  }
+
+  .card:nth-child(3n){
+      margin-right: 20px;
+    }
+
+  .card:nth-child(2n){
+    margin-right: 0;
+  }
+}
+
+@media (max-width:576px){
+  .card{
+    width: 100%;
+  }
+
+  .card:not(:nth-child(4n)) {
+    margin-right: 0;
+  }
+
+  .card:nth-child(3n){
+    margin-right: 0;
+  }
+
+}
+

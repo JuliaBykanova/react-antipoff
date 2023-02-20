@@ -1,0 +1,33 @@
+.headerContainer{
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 39px 188px;
+}
+
+.headerIcon{
+  margin-right: 32px;
+}
+
+@media (max-width: 992px){
+  .headerContainer{
+    flex-direction: column;
+  }
+
+  .headerIcon{
+    order: 1;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px){
+  .headerContainer{
+    padding: 80px 80px;
+  }
+}
+
+@media (max-width: 576px){
+  .headerContainer{
+    padding: 64px 30px;
+  }
+}

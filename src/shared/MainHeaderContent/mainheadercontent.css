@@ -1,0 +1,18 @@
+.headerContainer{
+  position: relative;
+  padding: 64px 297px;
+}
+
+@media (max-width: 1200px){
+  .headerContainer{
+    padding: 64px 80px;
+  }
+}
+
+@media (max-width: 576px){
+  .headerContainer{
+    padding: 64px 20px;
+  }
+}
+
+

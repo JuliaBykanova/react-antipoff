@@ -1,0 +1,29 @@
+.headerInfo{
+  text-align: center;
+}
+
+.headerTitle{
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 75px;
+  color: #FFF;
+}
+
+.headerText{
+  font-size: 20px;
+  line-height: 23px;
+  color: #f8f8f8;
+}
+
+@media (max-width: 576px){
+  .headerTitle{
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .headerText{
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
