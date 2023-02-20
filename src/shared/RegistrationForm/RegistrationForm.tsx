@@ -51,7 +51,7 @@ export function RegistrationForm() {
     } else if(password.length < 6) {
       textErrorPassword = 'Пароль не может содержать менее 6 символов';
     } else if(!validatePassword()){
-      textErrorPassword = 'Пароль должен содержать, хотя бы одну строчную букву';
+      textErrorPassword = 'Пароль должен содержать строчные и заглавные латинские буквы и цифры';
     };
     return(textErrorPassword);
   }
@@ -74,7 +74,7 @@ export function RegistrationForm() {
 
   function validatePassword(){
     return password.match(
-      /^(?=.*[a-z]).{6,}$/
+      /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{6,}$/
     );
   };
 
