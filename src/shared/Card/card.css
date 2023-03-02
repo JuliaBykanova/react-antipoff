@@ -4,7 +4,8 @@
   margin-bottom: 20px;
   padding: 20px;
   padding-top: 36px;
-  box-shadow: 0px 0.996045px 3.98418px rgba(51, 51, 51, 0.15);
+  -webkit-box-shadow: 0px 0.996045px 3.98418px rgba(51, 51, 51, 0.15);
+          box-shadow: 0px 0.996045px 3.98418px rgba(51, 51, 51, 0.15);
   border-radius: 10px;
   background-color: #FFF;
 }
@@ -14,9 +15,16 @@
 }
 
 .cardLink{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cardLink::before{
@@ -74,4 +82,3 @@
   }
 
 }
-

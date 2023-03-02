@@ -1,6 +1,10 @@
 .listBtn{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 8px 16px;
   border: 1px solid #151317;
   border-radius: 8px;
@@ -14,5 +18,7 @@
 }
 
 .inverted{
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }

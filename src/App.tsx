@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { hot } from "react-hot-loader/root";
 import { Layout } from './shared/Layout';
 import './main.global.css';
-import { applyMiddleware, createStore, Middleware, Action } from 'redux';
-import {Provider, useSelector} from 'react-redux';
+import './normalize.css';
+import { applyMiddleware, createStore } from 'redux';
+import {Provider} from 'react-redux';
 import {composeWithDevTools} from 'redux-devtools-extension';
-import { rootReducer, RootState } from './shared/store/reducer';
+import { rootReducer } from './shared/store/reducer';
 import thunk from 'redux-thunk';
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { RegistrationForm } from './shared/RegistrationForm/RegistrationForm';
 import { UserPage } from './shared/UserPage';
 

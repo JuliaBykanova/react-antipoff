@@ -1,6 +1,7 @@
 .cardBtn{
   z-index: 1;
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   padding: 8px;
   padding-bottom: 4px;
   background: #F8F8F8;
